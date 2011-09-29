@@ -70,6 +70,16 @@
 		<languages languagecode="en">en.xml</languages>
 	</instructions>
 	
+	<instructions type="update" fromversion="1.1.0">
+		<files>files.tar</files>
+		<languages languagecode="en">en.xml</languages>
+		<options>options.xml</options>
+		<languages languagecode="de">de.xml</languages>
+		<languages languagecode="de-informal">de-informal.xml</languages>
+		<templates>templates.tar</templates>
+		<script>acp/update120.php</script>
+	</instructions>
+	
 	<instructions type="update" fromversion="1.1.1">
 		<files>files.tar</files>
 		<languages languagecode="en">en.xml</languages>
