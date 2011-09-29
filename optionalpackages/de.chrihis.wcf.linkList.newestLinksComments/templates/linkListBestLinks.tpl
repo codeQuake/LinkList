@@ -1,0 +1,152 @@
+{if LINKLIST_BESTLINKS_TYPE == 1}
+	<div class="{cycle values='container-1,container-2'}">
+		<div class="containerIcon">
+			<img src="{icon}linkListLinkM.png{/icon}" alt="" />
+		</div>
+		<div class="containerContent">
+			<a href="javascript: void(0)" onclick="openList('linkListShowBestLinks', { save:true })">
+				<h3>{lang}wcf.linkList.bestLinks.title{/lang}</h3>
+			</a>
+			<p class="smallFont">{lang}wcf.linkList.bestLinks.description{/lang}</p>
+			
+			<ul id="linkListShowBestLinks" class="bestLinkListLinks">
+				{if !$links|count}
+					<p class="smallFont"><em>{lang}wcf.linkList.bestLinks.noLinks{/lang}</em></p>
+				{else}
+					{foreach from=$links item=link}
+						<li>
+							<ul class="breadCrumbs">
+								<li>
+									<a href="index.php?page=LinkListLinkCategory&amp;categoryID={@$link->categoryID}{@SID_ARG_2ND}">
+										<img src="{icon}{@$link->category->getIconName()}S.png{/icon}" alt="" />
+										<span>{$link->category->title}</span>
+									</a> &raquo;
+								</li>
+								<li>
+									<a href="index.php?page=LinkListLink&amp;linkID={@$link->linkID}{@SID_ARG_2ND}">
+										<img src="{icon}linkListLinkS.png{/icon}" alt="" />
+										<span>{$link->subject}</span>
+									</a> 
+									<span class="light">({@$link->visits} {lang}wcf.linkList.category.visits{/lang})</span>
+								</li>
+							</ul>
+						</li>
+					{/foreach}
+				{/if}
+			</ul>
+		</div>
+	</div>
+{elseif LINKLIST_BESTLINKS_TYPE == 2}
+	<div class="border titleBarPanel">
+		<div class="containerHead">
+			<div class="containerIcon">
+				<a href="javascript: void(0)" onclick="openList('linkListShowBestLinks', { save:true })">
+					<img src="{icon}minusS.png{/icon}" id="linkListShowBestLinksImage" alt="" />
+				</a>
+			</div>
+			<div class="containerContent">
+				{lang}wcf.linkList.bestLinks.title{/lang}
+			</div>
+		</div>
+	
+		<div id="linkListShowBestLinks">
+			{if !$links|count}
+				<p>{lang}wcf.linkList.bestLinks.noLinks{/lang}</p>
+			{else}
+				<table class="tableList">
+					<tbody>
+						{cycle values='container-1,container-2' name='className' print=false advance=false}
+						{foreach from=$links item=link}
+							<tr class="{cycle name='className'} normalFont">				
+								<td class="columnBestXLinks" style="width:25%;">
+									<img src="{icon}linkListCategoryS.png{/icon}" alt="" />
+									<a href="index.php?page=LinkListCategory&amp;categoryID={$link->categoryID}{@SID_ARG_2ND}"> <span>{$link->category->title|truncate:35:"..."}</span></a> &raquo;
+								</td>                        
+								<td class="columnBestXLinksSubject" style="width:39%;">
+									<span style="float: right;">
+										{if $link->attachments}
+											<img src="{icon}attachmentS.png{/icon}" alt="" title="{lang}wcf.linkList.bestLinks.attachments{/lang}" />
+										{/if}
+										{if $link->userID == $this->user->userID}
+											<img src="{icon}userS.png{/icon}" alt="" title="{lang}wcf.linkList.bestLinks.ownLink{/lang}" />
+										{/if}
+									</span>
+										<img src="{icon}linkListLinkS.png{/icon}" alt="" /> <a href="index.php?page=LinkListLink&amp;linkID={@$link->linkID}{@SID_ARG_2ND}"><span>{$link->subject|truncate:50:"..."} ({$link->visits} {lang}wcf.linkList.category.visits{/lang})</span></a>
+								</td>
+								<td class="columnBestXLinksTime" style="width:31%;">
+									<div class="containerIconSmall">
+										<a href="index.php?page=LinkListLink&amp;linkID={@$link->linkID}{@SID_ARG_2ND}"><img src="{icon}nextS.png{/icon}" alt="" /></a>
+									</div>
+									<div class="containerContentSmall">
+										<p class="smallFont">{lang}wcf.linkList.link.by{/lang}
+											{if $link->userID}
+												{$link->getAuthor()->username}
+											{else}
+												{$link->username}
+											{/if} 
+											<span class="light">({@$link->time|shorttime})</span>
+										</p>
+									</div>
+								</td>
+							</tr>
+						{/foreach}
+					</tbody>
+				</table>
+			{/if}
+		</div>
+	</div>
+{else}				
+                <div class="border bestLinks">
+                    <div class="containerHead">
+                         <div class="containerIcon">
+                            <a href="javascript: void(0)" onclick="openList('linkListShowBestLinks', { save:true })">
+                                <img src="{icon}minusS.png{/icon}" id="linkListShowBestLinksImage" alt="" />
+                            </a>
+                        </div>
+                        <div class="containerContent">
+                        	{lang}wcf.linkList.bestLinks.title{/lang}
+                        </div>
+                   </div>
+                   <div id="linkListShowBestLinks">
+                   <ul class="dataList">
+                    {cycle values='container-1,container-2' name='className' print=false advance=false}
+                    {if !$links|count}
+					<p>{lang}wcf.linkList.bestLinks.noLinks{/lang}<p>
+					{else}
+                            {foreach from=$links item=link}
+                            <li class="{cycle name='className'}">
+                            	<div class="containerIcon">
+                                	<img src="{icon}linkListLinkM.png{/icon}" alt="" />
+                                </div>
+                                <div class="containerContent">
+                                	<p class="linkTitle">
+                                    	<a href="index.php?page=LinkListLink&amp;linkID={@$link->linkID}{@SID_ARG_2ND}">										
+										<span>{$link->subject}</span>
+										</a> 
+                                    </p>
+                                    <p class="light smallFont">
+                                    {lang}wcf.linkList.link.by{/lang}
+                                    {if $link->userID}
+												<a href="index.php?page=User&amp;userID={$link->userID}{@SID_ARG_2ND}">{$link->getAuthor()->username}</a>
+											{else}
+												{$link->username}
+									{/if} 
+											<span class="light smallFont">({@$link->time|shorttime})</span>
+                                    </p>
+                                    <p class="light smallFont">
+                                    {lang}wcf.linkList.category.visits{/lang}: {$link->visits}
+                                    </p>
+                                </div>
+                                
+                            </li>
+                            {/foreach}
+                     {/if}
+                   </ul>
+                   </div>
+                </div>
+{/if}
+<script type="text/javascript">
+	//<![CDATA[
+	initList('linkListShowBestLinks', {@$status});
+	//]]>
+</script>     

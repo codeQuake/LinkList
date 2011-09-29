@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE data SYSTEM "http://www.woltlab.com/DTDs/renommeeobjecttype.dtd">
+<data>
+	<delete>
+		<type>
+			<name>linkListLinkComment</name>			
+		</type>
+	</delete>
+	<import>
+		<type>
+			<name>linkListLinkComment</name>
+			<tablename>linklist_link_comment</tablename>
+			<classfile>lib/data/linkList/link/comment/LinkListLinkCommentRenommeeObjectType.class.php</classfile>
+			<createfields>1</createfields>
+		</type>
+	</import>
+</data>
+

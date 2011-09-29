@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de">
+	<!-- wcf.acp.linkList -->
+	<category name="wcf.linkList">
+		<item name="wcf.linkList.newestLinks.title"><![CDATA[Die &raquo;{LINKLIST_NEWESTLINKS_NUMBER}&laquo; neusten Links]]></item>
+		<item name="wcf.linkList.newestLinks.description"><![CDATA[Hier finden Sie die zuletzt hinzugefügten Links.]]></item>
+		<item name="wcf.linkList.newestLinks.noLinks"><![CDATA[Es wurden noch keine Links hinzugef&uuml;gt.]]></item>
+		<item name="wcf.linkList.newestLinks.ownLink"><![CDATA[Dieser Link stammt von Ihnen.]]></item>
+		<item name="wcf.linkList.newestLinks.attachments"><![CDATA[Dieser Link enthält Dateianh&auml;nge.]]></item>
+		<item name="wcf.linkList.newestLinks.type1"><![CDATA[Ansicht 1]]></item>
+		<item name="wcf.linkList.newestLinks.type2"><![CDATA[Ansicht 2]]></item>
+		<item name="wcf.linkList.newestLinks.type3"><![CDATA[Ansicht 3]]></item>
+		<item name="wcf.linkList.bestLinks.title"><![CDATA[Die &raquo;{LINKLIST_BESTLINKS_NUMBER}&laquo; meistbesuchten Links]]></item>
+		<item name="wcf.linkList.bestLinks.description"><![CDATA[Hier finden Sie die meistbesuchten Links.]]></item>
+		<item name="wcf.linkList.bestLinks.noLinks"><![CDATA[Es wurden noch keine Links hinzugef&uuml;gt.]]></item>
+		<item name="wcf.linkList.bestLinks.ownLink"><![CDATA[Dieser Link stammt von Ihnen.]]></item>
+		<item name="wcf.linkList.bestLinks.attachments"><![CDATA[Dieser Link enthält Dateianh&auml;nge.]]></item>
+		<item name="wcf.linkList.bestLinks.type1"><![CDATA[Ansicht 1]]></item>
+		<item name="wcf.linkList.bestLinks.type2"><![CDATA[Ansicht 2]]></item>
+		<item name="wcf.linkList.bestLinks.type3"><![CDATA[Ansicht 3]]></item>
+		<item name="wcf.linkList.newestComments.title"><![CDATA[Die &raquo;{LINKLIST_NEWESTCOMMENTS_NUMBER}&laquo; neusten Kommentare]]></item>
+		<item name="wcf.linkList.newestComments.description"><![CDATA[Hier finden Sie die zuletzt hinzugef&uuml;gten Kommentare.]]></item>
+		<item name="wcf.linkList.newestComments.noComments"><![CDATA[Es wurden noch keine Kommentare hinzugef&uuml;gt.]]></item>
+		<item name="wcf.linkList.newestComments.ownComment"><![CDATA[Dieser Kommentar stammt von Ihnen.]]></item>
+		<item name="wcf.linkList.newestComments.type1"><![CDATA[Ansicht 1]]></item>
+		<item name="wcf.linkList.newestComments.type2"><![CDATA[Ansicht 2]]></item>		
+		<item name="wcf.linkList.newestComments.type3"><![CDATA[Ansicht 3]]></item>
+	</category>
+	<!-- /wcf.acp.linkList -->
+	
+	<!-- wcf.acp.option -->
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.linkList.link.newestLinks"><![CDATA[Neusten Links]]></item>
+		<item name="wcf.acp.option.category.linkList.link.newestLinks.description" />
+		<item name="wcf.acp.option.linkList_show_newestLinks"><![CDATA[Neusten Links anzeigen]]></item>
+		<item name="wcf.acp.option.linkList_show_newestLinks.description"><![CDATA[Wählen Sie diese Option, wenn Sie wollen, dass die neusten Links angezeigt werden sollen.]]></item>
+		<item name="wcf.acp.option.linkList_newestLinks_number"><![CDATA[Anzahl der zu zeigenden Links]]></item>
+		<item name="wcf.acp.option.linkList_newestLinks_number.description"><![CDATA[Geben Sie hier an, wieviele Links in der Anzeige &raquo; Die <em>x</em> neusten Links&laquo; angezeigt werden sollen.]]></item>
+		<item name="wcf.acp.option.linkList_newestLinks_type"><![CDATA[Ansicht]]></item>
+		<item name="wcf.acp.option.linkList_newestLinks_type.description"><![CDATA[<p>Wählen Sie hier die Ansicht aus, wie die neusten Links angezeigt werden sollen.</p>
+<strong>Ansicht 1</strong>: Ansicht der neusten Links unterhalb der Statistik <br />
+<strong>Ansicht 2</strong>: Ansicht unterhalb des Seitentitels<br/>
+<strong>Ansicht 3</strong>: Ansicht in der Sidebar]]></item>
+		<item name="wcf.acp.option.category.linkList.link.bestLinks"><![CDATA[Besten Links]]></item>
+		<item name="wcf.acp.option.category.linkList.link.bestLinks.description" />
+		<item name="wcf.acp.option.linkList_show_bestLinks"><![CDATA[Besten Links anzeigen]]></item>
+		<item name="wcf.acp.option.linkList_show_bestLinks.description"><![CDATA[Wählen Sie diese Option, wenn Sie wollen, dass die meistbesuchten Links angezeigt werden sollen.]]></item>
+		<item name="wcf.acp.option.linkList_bestLinks_number"><![CDATA[Anzahl der zu zeigenden Links]]></item>
+		<item name="wcf.acp.option.linkList_bestLinks_number.description"><![CDATA[Geben Sie hier an, wieviele Links in der Anzeige &raquo; Die <em>x</em> bestenn Links&laquo; angezeigt werden sollen.]]></item>
+		<item name="wcf.acp.option.linkList_bestLinks_type"><![CDATA[Ansicht]]></item>
+		<item name="wcf.acp.option.linkList_bestLinks_type.description"><![CDATA[<p>Wählen Sie hier die Ansicht aus, wie die besten Links angezeigt werden sollen.</p>
+<strong>Ansicht 1</strong>: Ansicht der besten Links unterhalb der Statistik <br />
+<strong>Ansicht 2</strong>: Ansicht unterhalb des Seitentitels<br/>
+<strong>Ansicht 3</strong>: Ansicht in der Sidebar]]></item>
+		<item name="wcf.acp.option.category.linkList.comment.newestComments"><![CDATA[Neuste Kommentare]]></item>
+		<item name="wcf.acp.option.category.linkList.comment.newestComments.description" />
+		<item name="wcf.acp.option.linkList_show_newestComments"><![CDATA[Neusten Kommentare anzeigen]]></item>
+		<item name="wcf.acp.option.linkList_show_newestComments.description"><![CDATA[W&auml;hlen Sie diese Option, wenn Sie wollen, dass die neusten Kommentare angezeigt werden sollen.]]></item>
+		<item name="wcf.acp.option.linkList_newestComments_number"><![CDATA[Anzahl der zu zeigenden Kommentare]]></item>
+		<item name="wcf.acp.option.linkList_newestComments_number.description"><![CDATA[Geben Sie hier an, wieviele Kommentare in der Anzeige &raquo; Die <em>x</em> neusten Kommentare&laquo; angezeigt werden sollen.]]></item>
+		<item name="wcf.acp.option.linkList_newestComments_type"><![CDATA[Ansicht]]></item>
+		<item name="wcf.acp.option.linkList_newestComments_type.description"><![CDATA[<p>W&auml;hle hier die Ansicht aus, wie die neusten Kommentare angezeigt werden sollen.</p>
+<strong>Ansicht 1</strong>: Ansicht der neusten Kommentare unterhalb der Statistik <br />
+<strong>Ansicht 2</strong>: Ansicht unterhalb des Seitentitels<br/>
+<strong>Ansicht 3</strong>: Ansicht in der Sidebar]]></item>
+	</category>
+	<!-- /wcf.acp.option -->	
+</language>

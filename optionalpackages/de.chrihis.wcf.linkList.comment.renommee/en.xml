@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="en">
+	<!-- wcf.acp.option -->
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.user_renommee_object_linkList_link_active"><![CDATA[Assessment of links activate]]></item>
+		<item name="wcf.acp.option.user_renommee_object_linkList_link_active.description"><![CDATA[Should it be possible for your members to assess Global links?]]></item>
+	</category>
+	<!-- /wcf.acp.option -->
+	
+	<!-- wcf.user.renomme -->
+	<category name="wcf.user.renommee">
+		<item name="wcf.user.renommee.modifier.linkListLink"><![CDATA[Links]]></item>
+		<item name="wcf.user.renommee.modifier.linkListLink.description"><![CDATA[For adding links, you will receive a bonus modifier on your.]]></item>
+		<item name="wcf.user.renommee.linkListLink.renommee"><![CDATA[This link has a reputation-rating of {$renommee}]]></item>
+		<item name="wcf.user.renommee.linkListLink.state"><![CDATA[How do you rate the link from &raquo;{$username}&laquo;?]]></item>
+		<item name="wcf.user.renommee.linkListLink.state.negative"><![CDATA[I think the link is not good]]></item>
+		<item name="wcf.user.renommee.linkListLink.state.positive"><![CDATA[I find the link well]]></item>
+	</category>
+	<!-- /wcf.user.renomme -->
+</language>

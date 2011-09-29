@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<delete>
+		<type>
+			<name>linkListLink</name>			
+		</type>
+	</delete>
+	<import>
+		<type>
+			<name>linkListLink</name>
+			<tablename>linklist_link</tablename>
+			<classfile>lib/data/linkList/link/LinkListLinkRenommeeObjectType.class.php</classfile>
+			<createfields>1</createfields>
+		</type>
+	</import>
+</data>

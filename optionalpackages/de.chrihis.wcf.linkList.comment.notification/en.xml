@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="en">
+	<category name="wcf.user.notification">
+		<item name="wcf.user.notification.object.type.linkListLink"><![CDATA[Links]]></item>                
+	</category>
+	<category name="wcf.linkList">
+		<item name="wcf.linkList.notification.newLinkComment"><![CDATA[You have a new <a href="{@$event->getObject()->getURL()}{@SID_ARG_2ND}">Comment</a>{if $event->getObject()->userID} from <a href="index.php?page=User&amp;userID={@$event->getObject()->userID}{@SID_ARG_2ND}">{$event->getObject()->username}</a>{/if} get one of your links.]]></item>
+		<item name="wcf.linkList.notification.newLinkComment.accept"><![CDATA[Confirm]]></item>
+		<item name="wcf.linkList.notification.newLinkComment.title"><![CDATA[New link comment]]></item>
+		<item name="wcf.linkList.notification.newLinkComment.description"><![CDATA[You will receive a notification about new comments on your links.]]></item>
+		<item name="wcf.linkList.notification.newLinkComment.short"><![CDATA[New <a href="{@$event->getObject()->getURL()}{@SID_ARG_2ND}">Link Comment</a>{if $event->getObject()->userID} from <a href="index.php?page=User&amp;userID={@$event->getObject()->userID}{@SID_ARG_2ND}">{$event->getObject()->username}</a>{/if}]]></item>
+		<item name="wcf.linkList.notification.newLinkComment.medium"><![CDATA[New <a href="{@$event->getObject()->getURL()}{@SID_ARG_2ND}">Comment</a>{if $event->getObject()->userID} von <a href="index.php?page=User&amp;userID={@$event->getObject()->userID}{@SID_ARG_2ND}">{$event->getObject()->username}</a>{/if} to one of your links.]]></item>
+		<item name="wcf.linkList.notification.newLinkComment.userMessages"><![CDATA[You have a new <a href="{@$event->getObject()->getURL()}{@SID_ARG_2ND}">Comment</a>{if $event->getObject()->userID} from <a href="index.php?page=User&amp;userID={@$event->getObject()->userID}{@SID_ARG_2ND}">{$event->getObject()->username}</a>{/if} get one of your links.]]></item>
+		<item name="wcf.linkList.notification.newLinkComment.mail"><![CDATA[Hello {$user->username},
+
+{$event->getObject()->username} has a new comment posted to one of your links:
+"{$event->getObject()->getFormattedMessage('text/plain')}"
+
+This link will take you directly to the new comment: {@$pageURL}{@$event->getObject()->getURL()}]]></item>
+		<item name="wcf.linkList.notification.newLinkComment.pm"><![CDATA[Hello {$user->username},
+
+{$event->getObject()->username} has a new comment posted to one of your links:
+"{$event->getObject()->getFormattedMessage()}"
+
+This link will take you directly to the new comment: [url]{@$pageURL}{@$event->getObject()->getURL()}[/url]]]></item>
+	</category>
+</language>
