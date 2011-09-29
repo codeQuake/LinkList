@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de">
+	<!-- wcf.linkList -->
+	<category name="wcf.linkList">
+		<item name="wcf.linkList.copyright"><![CDATA[<p class="copyright smallFont"><a href="http://codequake.de"><strong>Linklist</strong>, by <strong>codeQuake</strong></a></p>]]></item>
+		<item name="wcf.linkList.index"><![CDATA[Links]]></item>
+		<item name="wcf.linkList.index.description"><![CDATA[Here you will find a collection of several links. You can add links or comment on existing links.]]></item>
+		<item name="wcf.linkList.statistics"><![CDATA[Statistics]]></item>
+		<item name="wcf.linkList.statistics.details"><![CDATA[{if $statistics.categories == 1}1 Category{else}{#$statistics.categories} 	Categories{/if} - {if $statistics.links == 1}1 Link{else} {#$statistics.links} Links{/if} ({#$statistics.linksPerDay} Links per day) - {if $statistics.comments == 1}1 Kommentar{else}{#$statistics.comments} Comments{/if} ({#$statistics.commentsPerDay} Comments per day) - {if $statistics.visits == 1}1 Visit{else}{#$statistics.visits} Visits{/if}]]></item>
+		<item name="wcf.linkList.link.search.query"><![CDATA[Search Links]]></item>
+		<item name="wcf.linkList.moderation"><![CDATA[Moderation]]></item>
+		<item name="wcf.linkList.moderation.overview"><![CDATA[Overview]]></item>
+		<item name="wcf.linkList.moderation.deletedLinks"><![CDATA[Deleted Links]]></item>
+		<item name="wcf.linkList.moderation.deletedLinks.list"><![CDATA[Deleted Link List]]></item>
+		<item name="wcf.linkList.moderation.deletedLinks.noLinks"><![CDATA[There are no deleted Links available]]></item>
+		<item name="wcf.linkList.moderation.disabledLinks"><![CDATA[Disabled Links]]></item>
+		<item name="wcf.linkList.moderation.disabledLinks.list"><![CDATA[Disabled Link List]]></item>
+		<item name="wcf.linkList.moderation.disabledLinks.noLinks"><![CDATA[There are no disabled Links available]]></item>
+		<item name="wcf.linkList.moderation.markedLinks"><![CDATA[Selected Links]]></item>
+		<item name="wcf.linkList.moderation.markedLinks.list"><![CDATA[Marked Link List]]></item>
+		<item name="wcf.linkList.moderation.markedLinks.noLinks"><![CDATA[There are no marked links available]]></item>
+		<item name="wcf.linkList.moderation.note"><![CDATA[<div class="info smallFont">
+			
+			{if $disabledLinks}<a href="index.php?page=LinkListModerationDisabledLinks{@SID_ARG_2ND}">{if $disabledLinks == 1}1 Link</a> is{else}{#$disabledLinks} Links</a> are{/if} disabled.{/if} {if $markedLinks}<a href="index.php?page=LinkListModerationMarkedLinks{@SID_ARG_2ND}">{if $markedLinks == 1}1 Link</a> is{else}{#$markedLinks} Links</a> are{/if} marked.{/if}
+		</div>]]></item>
+		<item name="wcf.linkList.category.stats.links"><![CDATA[{if $category->links == 1}Link{else}Links{/if}]]></item>
+		<item name="wcf.linkList.category.stats.comments"><![CDATA[{if $category->comments == 1}comment{else}Comments{/if}]]></item>
+		<item name="wcf.linkList.category.links"><![CDATA[Links]]></item>
+		<item name="wcf.linkList.category.links.tagged"><![CDATA[Links mit dem Tag &raquo;{$tag->getName()}&laquo;]]></item>
+		<item name="wcf.linkList.category.noLinks"><![CDATA[There were no links added yet]]></item>
+		<item name="wcf.linkList.category.visits"><![CDATA[Visits]]></item>
+		<item name="wcf.linkList.category.comments"><![CDATA[Comments]]></item>
+		<item name="wcf.linkList.category.sort"><![CDATA[sorting]]></item>
+		<item name="wcf.linkList.category.sortBy"><![CDATA[sort by]]></item>
+		<item name="wcf.linkList.category.sortBy.subject"><![CDATA[title]]></item>
+		<item name="wcf.linkList.category.sortBy.lastChangeTime"><![CDATA[Last change]]></item>
+		<item name="wcf.linkList.category.sortBy.visits"><![CDATA[Visits]]></item>
+		<item name="wcf.linkList.category.sortBy.comments"><![CDATA[Comments]]></item>
+		<item name="wcf.linkList.category.sortBy.time"><![CDATA[Added]]></item>
+		<item name="wcf.linkList.linkAdd.pageTitle"><![CDATA[Add Link]]></item>
+		<item name="wcf.linkList.linkAdd.isSticky"><![CDATA[important Link]]></item>
+		<item name="wcf.linkList.linkAdd.isSticky.status"><![CDATA[Status]]></item>
+		<item name="wcf.linkList.linkAdd.isSticky.0"><![CDATA[normal Link]]></item>
+		<item name="wcf.linkList.linkAdd.isSticky.1"><![CDATA[important Link]]></item>
+		<item name="wcf.linkList.linkAdd.generalData"><![CDATA[General data]]></item>
+		<item name="wcf.linkList.linkAdd.subject"><![CDATA[Title]]></item>
+		<item name="wcf.linkList.linkAdd.url"><![CDATA[URL-Address]]></item>
+		<item name="wcf.linkList.linkAdd.url.description"><![CDATA[Enter the address of the Link. This should mit &raquo;<em>http://</em>&laquo; begin.]]></item>
+		<item name="wcf.linkList.linkAdd.shortDescription"><![CDATA[Short Description]]></item>
+		<item name="wcf.linkList.linkAdd.shortDescription.description"><![CDATA[Enter a brief description, what the site offers other members (optional). A good short description consists of <strong>maximum 500 sign</strong>.]]></item>
+		<item name="wcf.linkList.linkAdd.text"><![CDATA[Message]]></item>
+		<item name="wcf.linkList.link.add.success.moderation"><![CDATA[Your Link has been successfully added. Before he visible from all users, it must be checked by a moderator.]]></item>
+		<item name="wcf.linkList.linkEdit.pageTitle"><![CDATA[modify Link]]></item>
+		<item name="wcf.linkList.link.menu.link"><![CDATA[Link]]></item>
+		<item name="wcf.linkList.link.menu.comments"><![CDATA[Comments]]></item>
+		<item name="wcf.linkList.link.menu.comment.add"><![CDATA[Add comment]]></item>
+		<item name="wcf.linkList.link.notEverEnabled"><![CDATA[This Link has not been activated by a moderator.]]></item>
+		<item name="wcf.linkList.link.isDisabled"><![CDATA[This Link has been disabled by a moderator.]]></item>
+		<item name="wcf.linkList.link.isDeleted"><![CDATA[This Link was <a href="index.php?page=User&amp;userID={@$link->deletedByID}">{$link->deletedBy}</a> deleted ({@$link->deleteTime|time}).]]></item>
+		<item name="wcf.linkList.category.links.isDeleted"><![CDATA[This Link was deleted by a moderator.]]></item>
+		<item name="wcf.linkList.link.lastVisitors.title"><![CDATA[last visitors]]></item>
+		<item name="wcf.linkList.link.generalData"><![CDATA[General data]]></item>
+		<item name="wcf.linkList.link.author"><![CDATA[user]]></item>
+		<item name="wcf.linkList.link.guest"><![CDATA[guest]]></item>
+		<item name="wcf.linkList.link.lastChangeTime"><![CDATA[Last change]]></item>
+		<item name="wcf.linkList.link.time"><![CDATA[Added]]></item>
+		<item name="wcf.linkList.link.visits"><![CDATA[Number of Visits]]></item>
+		<item name="wcf.linkList.link.lastVisit"><![CDATA[Last Visit]]></item>
+		<item name="wcf.linkList.link.tags"><![CDATA[Tags]]></item>
+		<item name="wcf.linkList.link.ipAddress"><![CDATA[IP Address]]></item>
+		<item name="wcf.linkList.link.selection"><![CDATA[choices]]></item>
+		<item name="wcf.linkList.link.visit"><![CDATA[visit]]></item>
+		<item name="wcf.linkList.link.visit.value"><![CDATA[visit Link]]></item>
+		<item name="wcf.linkList.link.comment.add"><![CDATA[comment on]]></item>
+		<item name="wcf.linkList.link.comment.add.value"><![CDATA[link to comment]></item>
+		<item name="wcf.linkList.link.by"><![CDATA[of]]></item>
+		<item name="wcf.linkList.link.commentList"><![CDATA[Comments list]]></item>
+		<item name="wcf.linkList.link.comment.add"><![CDATA[Add comment]]></item>
+		<item name="wcf.linkList.link.comment.add.message"><![CDATA[Message]]></item>
+		<item name="wcf.linkList.link.comment.edit"><![CDATA[Edit Comment]]></item>
+		<item name="wcf.linklist.link.commentList.noComments"><![CDATA[No comments have been added yet]]></item>
+		<item name="wcf.linkList.link.commentList.show.ipAddress"><![CDATA[View IP Address]]></item>
+		<item name="wcf.linkList.link.commentList.ipAddressBy"><![CDATA[IP address of &raquo;{$comment->username}&laquo;:]]></item>
+		<item name="wcf.linkList.link.commentList.lastChangeTime"><![CDATA[Last change]]></item>
+		<item name="wcf.linkList.link.comment.delete.sure"><![CDATA[Do you want to delete this comment irrevocably?]]></item>
+		<item name="wcf.linkList.category.links.recover"><![CDATA[restore]]></item>
+		<item name="wcf.linkList.category.links.enable"><![CDATA[activate]]></item>
+		<item name="wcf.linkList.category.links.disable"><![CDATA[deactivat]]></item>
+		<item name="wcf.linkList.category.links.open"><![CDATA[open]]></item>
+		<item name="wcf.linkList.category.links.close"><![CDATA[close]]></item>
+		<item name="wcf.linkList.category.links.editSubject"><![CDATA[edit Title]]></item>
+		<item name="wcf.linkList.category.markedLinks"><![CDATA[this.count == 1 ? "A Link marked" : this.count+"Links marked"]]></item>
+		<item name="wcf.linkList.category.deleteSure"><![CDATA[Do you want to delete this Link?]]></item>
+		<item name="wcf.linkList.category.links.deleteCompletely.sure"><![CDATA[You really want to delete this Link irrevocably?]]></item>
+		<item name="wcf.linkList.category.links.deleteMarked.sure"><![CDATA[Do you want to delete the highlighted Links really?]]></item>
+		<item name="wcf.linkList.category.links.move"><![CDATA[move Here]]></item>
+		<item name="wcf.linkList.category.links.stick"><![CDATA[attach top]]></item>
+		<item name="wcf.linkList.category.links.unstick"><![CDATA[detached top]]></item>
+		<item name="wcf.linkList.category.links.showMarkedLinks"><![CDATA[Selected Links View]]></item>
+		<item name="wcf.linkList.category.stats.visits"><![CDATA[Visits]]></item>
+	</category>
+	<!-- /wcf.linkList -->
+		
+	<!-- wcf.acp.linkList -->
+	<category name="wcf.acp.linkList">
+		<item name="wcf.acp.linkList.category.list"><![CDATA[List Categories]]></item>
+		<item name="wcf.acp.linkList.category.count.noCategories"><![CDATA[It was no categories added.]]></item>
+		<item name="wcf.acp.linkList.category.sort.success"><![CDATA[The categories have just successfully sorted.]]></item>
+		<item name="wcf.acp.linkList.category.add"><![CDATA[Add Category]]></item>
+		<item name="wcf.acp.linkList.category.edit"><![CDATA[Edit Category]]></item>
+		<item name="wcf.acp.linkList.category.edit.success"><![CDATA[Changes to this category have been successfully saved.]]></item>
+		<item name="wcf.acp.linkList.category.data"><![CDATA[Data]]></item>
+		<item name="wcf.acp.linkList.category.permissions"><![CDATA[Access rights for user groups]]></item>
+		<item name="wcf.acp.linkList.category.categoryType"><![CDATA[Category Type]]></item>
+		<item name="wcf.acp.linkList.category.categoryType.0"><![CDATA[Category]]></item>
+		<item name="wcf.acp.linkList.category.categoryType.1"><![CDATA[Main Category]]></item>
+		<item name="wcf.acp.linkList.category.data.general"><![CDATA[General data]]></item>
+		<item name="wcf.acp.linkList.category.title"><![CDATA[Title]]></item>
+		<item name="wcf.acp.linkList.category.description"><![CDATA[description]]></item>
+		<item name="wcf.acp.linkList.category.allowDescriptionHtml"><![CDATA[HTML allow the description text]]></item>
+		<item name="wcf.acp.linkList.category.image"><![CDATA[Special category image]]></item>
+		<item name="wcf.acp.linkList.category.image.description"><![CDATA[You can specify a particular category icon. The icon should be in wcf/icon folder to be and use the suffix. png. If you for example icon &raquo;testL.png&laquo; want to load it in the sizes S (16x16), M (24x24) and L (48x48) in the wcf/ folder and give here only &raquo;<strong>test</strong>&laquo; on.]]></item>
+		<item name="wcf.acp.linkList.category.allowComments"><![CDATA[Allow Comments]]></item>
+		<item name="wcf.acp.linkList.category.allowComments.standard"><![CDATA[Standard <span class="description smallFont light">(Accepts the setting, how it was made ​​in the options)</span>]]></item>
+		<item name="wcf.acp.linkList.category.allowComments.deny"><![CDATA[Forbid]]></item>
+		<item name="wcf.acp.linkList.category.allowComments.allow"><![CDATA[Allow]]></item>
+		<item name="wcf.acp.linkList.category.data.position"><![CDATA[Position of the category]]></item>
+		<item name="wcf.acp.linkList.category.parentID"><![CDATA[Parent Category]]></item>
+		<item name="wcf.acp.linkList.category.parentID.description"><![CDATA[Select a parent category from.]]></item>
+		<item name="wcf.acp.linkList.category.position"><![CDATA[Position]]></item>
+		<item name="wcf.acp.linkList.category.position.description"><![CDATA[Enter the sequence of, that the category to be listed.]]></item>
+		<item name="wcf.acp.linkList.category.permissions.title"><![CDATA[Group Name]]></item>
+		<item name="wcf.acp.linkList.category.permissions.add"><![CDATA[Add]]></item>
+		<item name="wcf.acp.linkList.category.permissions.allow"><![CDATA[Allow]]></item>
+		<item name="wcf.acp.linkList.category.permissions.deny"><![CDATA[deny]]></item>
+		<item name="wcf.acp.linkList.category.permissions.fullControl"><![CDATA[full Access]]></item>
+		<item name="wcf.acp.linkList.category.permissions.permissionsFor"><![CDATA[permissions for {$name}]]></item>
+		<item name="wcf.acp.linkList.category.permissions.canViewCategory"><![CDATA[Can see category]]></item>
+		<item name="wcf.acp.linkList.category.permissions.canEnterCategory"><![CDATA[Can enter category]]></item>
+		<item name="wcf.acp.linkList.category.permissions.canViewLink"><![CDATA[Links can see / enter]]></item>
+		<item name="wcf.acp.linkList.category.permissions.canAddLink"><![CDATA[Can add Links]]></item>
+		<item name="wcf.acp.linkList.category.permissions.canAddLinkWithoutModeration"><![CDATA[Can add Links without activation]]></item>
+		<item name="wcf.acp.linkList.category.permissions.canEditOwnLink"><![CDATA[Can edit Links]]></item>
+		<item name="wcf.acp.linkList.category.permissions.canDeleteOwnLink"><![CDATA[Can delete own Links]]></item>
+		<item name="wcf.acp.linkList.category.permissions.canVisitLink"><![CDATA[Can visit Links]]></item>
+		<item name="wcf.acp.linkList.category.permissions.canViewComment"><![CDATA[Comments can see]]></item>
+		<item name="wcf.acp.linkList.category.permissions.canAddComment"><![CDATA[Can add comments]]></item>
+		<item name="wcf.acp.linkList.category.permissions.canEditOwnComment"><![CDATA[Can edit own comments]]></item>
+		<item name="wcf.acp.linkList.category.permissions.canDeleteOwnComment"><![CDATA[Can delete own comments]]></item>
+		<item name="wcf.acp.linkList.category.permissions.canUploadAttachment"><![CDATA[can files attach]]></item>
+		<item name="wcf.acp.linkList.category.permissions.canDownloadAttachment"><![CDATA[Can download attachments]]></item>
+		<item name="wcf.acp.linkList.category.permissions.canViewAttachmentPreview"><![CDATA[Can see file attachment preview]]></item>
+		<item name="wcf.acp.linkList.category.add.success"><![CDATA[The new category has been successfully saved.]]></item>
+		<item name="wcf.acp.linkList.category.delete.sure"><![CDATA[Do you want this category and delete all data entered?]]></item>
+	</category>
+	<!-- /wcf.acp.linkList -->
+
+	<!-- wcf.acp.menu -->
+	<category name="wcf.acp.menu">
+		<item name="wcf.acp.menu.link.content.linkList"><![CDATA[Links]]></item>
+		<item name="wcf.acp.menu.link.content.linkList.category.list"><![CDATA[List Categories]]></item>
+		<item name="wcf.acp.menu.link.content.linkList.category.add"><![CDATA[Add Category]]></item>
+	</category>
+	<!-- /wcf.acp.menu -->
+	
+	<!-- wcf.search -->
+	<category name="wcf.search">
+		<item name="wcf.search.type.linkListLink"><![CDATA[Links]]></item>
+	</category>
+	<!-- /wcf.search -->
+	
+	<!-- wcf.usersOnline -->
+	<category name="wcf.usersOnline">
+		<item name="wcf.usersOnline.location.linkList.index"><![CDATA[<a href="index.php?page=LinkList">Links</a>]]></item>
+	</category>
+	<!-- /wcf.usersOnline -->
+	
+	<!-- wcf.header.menu -->
+	<category name="wcf.header.menu">
+		<item name="wcf.header.menu.linkList"><![CDATA[Links]]></item>
+	</category>
+	<!-- /wcf.header.menu -->
+	
+	<!-- wcf.tagging -->
+	<category name="wcf.tagging">
+		<item name="wcf.tagging.taggable.all.de.chrihis.wcf.linkList.link"><![CDATA[All Links]]></item>
+		<item name="wcf.tagging.taggable.de.chrihis.wcf.linkList.link"><![CDATA[Links]]></item>
+	</category>
+	<!-- /wcf.tagging -->
+
+	<!-- wcf.help.item -->
+	<category name="wcf.help.item">
+		<item name="wcf.help.item.linkList"><![CDATA[Link collection (Linkliste)]]></item>
+		<item name="wcf.help.item.linkList.description"><![CDATA[Below are explanations of the various functions of the <a href="index.php?page=LinkList">Link collection (Linkliste)</a>.]]></item>
+		<item name="wcf.help.item.linkList.links"><![CDATA[Links]]></item>
+		<item name="wcf.help.item.linkList.links.description"><![CDATA[<p>When you click on the header menu &raquo;<a href="index.php?page=LinkList">Links</a>&laquo; , takes you directly to the home page of link collection (Linkliste). There you will first list all categories, You can click on to see the links, who are in this category. On the right side after a category name You can find the number of links and the number of comments. <br /> Directly below the category list you can find the statistics. This shows you data, e.g. The number of categories, the number of links, how many links are created per day, the number of comments, how many comments are posted per day and the number, how often all the links have been visited.</p>
+<p>If you have a category called, You can find all previously added in the category links. There, you will be presented in brief the main points to a link, e.g. the title of the link, a brief description, the author's name, the time of last modification and other facts (Comments, Visits). To link to take a closer look and can see all the information click on the linked title of the respective links. If you have the corresponding right to build links, you are on the side of the category list to the two &raquo;Link add &laquo; displayed. Click this, you go to another page, where you can add a new link (approximation, you learn later). <br />
+At the bottom of the page you will find settings for sorting. You can select, according to what the links are sorted/ list, e.g. by title, last update, visits, etc... Right next to it, you can specify, whether the links in decreasing or increasing order to be listed. </p>
+<p>Click on a link, so you will see the overview of the central links. There, you see everything that was given to this link, e.g. the user who added the link, the addition date, the date of the latest change, the number of visits, recent visitors and the date, etc.. You also have the opportunity, to visit the link.  &raquo;visit link&raquo;. In the tab menu, you can choose whether the central index of links or the comments of the links (see below) want to see. </p>
+<p>With only few clicks you can add a new link. To do this, as already described, in an appropriate category on the button &raquo;link add&laquo;. If you do not make this button displays, You do not have to add the appropriate rights a new link (to find out the reason, you can contact the administrator). Are you on the page where you add a new link, you must provide some information about the page. First, you must enter a title (It is recommended the name of the page), the URL of the link (in the format: <em>http://</em>) and a description of the page. More detailed description of these fails, all the more appealing is the link for the community. So take a few minutes of quiet time and write a description, to convince the community of the page. You can also, optionally, a brief description of the link and enter tags. Then click on &raquo;Absenden&laquo; and the link is saved.</p>]]></item>
+		<item name="wcf.help.item.linkList.comments"><![CDATA[Comments]]></item>
+		<item name="wcf.help.item.linkList.comments.description"><![CDATA[<p>Click on the help of such links already described Description, at the central link to the index tab &raquo;Comments&laquo;, you directly to the listing of all comments. With each comment you find on the left side information about the author, e.g. User name and avatar. On the right side of the list you will find a blue sidebar, you once again indicates the important data for the current link. </p>
+To add a new comment can simply click on one of two buttons &raquo;Add comment&laquo; on the list of comments. You will be redirected to a page, where you can enter the text you want. in the tab &raquo;settings&laquo; the editor, you can also specify, whether the signature should be viewed with. Wenn Sie anschließend auf &raquo;send&laquo; Click the comment will be saved. If you do not, the buttons are displayed, you may not have the right to create new comments. Please contact the administrator for more questions.</p>]]></item>
+	</category>
+	<!-- /wcf.help.item -->
+
+	<!-- wcf.acp.group -->
+	<category name="wcf.acp.group">
+		<!-- user -->
+		<item name="wcf.acp.group.option.category.user.linkList"><![CDATA[Links]]></item>
+		<item name="wcf.acp.group.option.category.user.linkList.description" />
+		<item name="wcf.acp.group.option.category.user.linkList.links"><![CDATA[Links (general)]]></item>
+		<item name="wcf.acp.group.option.category.user.linkList.links.description" />
+		<item name="wcf.acp.group.option.category.user.linkList.attachments"><![CDATA[attachments]]></item>
+		<item name="wcf.acp.group.option.category.user.linkList.attachments.description" />
+		<item name="wcf.acp.group.option.category.user.linkList.comments"><![CDATA[Comments]]></item>
+		<item name="wcf.acp.group.option.category.user.linkList.comments.description" />
+
+		<item name="wcf.acp.group.option.user.linkList.canViewLinkList"><![CDATA[can see Link collection]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canViewLinkList.description"><![CDATA[Members of these groups can &raquo;Home&laqo; see the link collection.]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canViewCategory"><![CDATA[Can not see categories]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canViewCategory.description"><![CDATA[Members of these groups can see categories.]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canEnterCategory"><![CDATA[Can enter categories]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canEnterCategory.description"><![CDATA[Members of these groups can enter categories.]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canViewLink"><![CDATA[Can see Links]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canViewLink.description"><![CDATA[Members of these groups can see individual links and entering this.]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canAddLink"><![CDATA[Can add Links]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canAddLink.description"><![CDATA[Members of these groups can add new Links.]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canAddLinkWithoutModeration"><![CDATA[Can add Links without activation]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canAddLinkWithoutModeration.description"><![CDATA[Members of these groups have Links without registration and examination by a moderator to add.]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canEditOwnLink"><![CDATA[Can edit own Links]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canEditOwnLink.description"><![CDATA[Members of this group of users can edit their own Links.]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canDeleteOwnLink"><![CDATA[Can delete own Links]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canDeleteOwnLink.description"><![CDATA[Members of this group of users can delete their own Links.]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canDownloadAttachment"><![CDATA[Can download attachments]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canDownloadAttachment.description"><![CDATA[Members of these groups can download attachments.]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canViewAttachmentPreview"><![CDATA[Can see file attachment preview]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canViewAttachmentPreview.description"><![CDATA[Members of these groups can see the preview of file attachments.]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canUploadAttachment"><![CDATA[Can Upload Attachments]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canUploadAttachment.description"><![CDATA[Members of these groups can upload their own attachments.]]></item>
+		<item name="wcf.acp.group.option.user.linkList.maxAttachmentSize"><![CDATA[Maximum attachment size]]></item>
+		<item name="wcf.acp.group.option.user.linkList.maxAttachmentSize.description"><![CDATA[Enter the maximum size per attachment in bytes for this user group.]]></item>
+		<item name="wcf.acp.group.option.user.linkList.allowedAttachmentExtensions"><![CDATA[Allowed file extensions]]></item>
+		<item name="wcf.acp.group.option.user.linkList.allowedAttachmentExtensions.description"><![CDATA[Enter the allowed extensions for attachments for this user group (with line extension).]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canViewComment"><![CDATA[Can see comments]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canViewComment.description"><![CDATA[Members of these groups can see a Link comments.]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canAddComment"><![CDATA[Can add comments]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canAddComment.description"><![CDATA[Members of this group of users can add comments to a new link.]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canEditOwnComment"><![CDATA[Can edit own comments]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canEditOwnComment.description"><![CDATA[Members of this group of users can edit their own comments]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canDeleteOwnComment"><![CDATA[Can delete own comments]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canDeleteOwnComment.description"><![CDATA[Members of this group of users can delete their own comments.]]></item>
+		<!-- /user -->
+		
+		<!-- mod -->
+		<item name="wcf.acp.group.option.category.mod.linkList"><![CDATA[Links]]></item>
+		<item name="wcf.acp.group.option.category.mod.linkList.description" />
+		<item name="wcf.acp.group.option.category.mod.linkList.links"><![CDATA[Links (general)]]></item>
+		<item name="wcf.acp.group.option.category.mod.linkList.links.description" />
+		<item name="wcf.acp.group.option.category.mod.linkList.comments"><![CDATA[Comments]]></item>
+		<item name="wcf.acp.group.option.category.mod.linkList.comments.description" />
+
+		<item name="wcf.acp.group.option.mod.linkList.canEnableLink"><![CDATA[Can contain Links (de-) activate]]></item>
+		<item name="wcf.acp.group.option.mod.linkList.canEnableLink.description"><![CDATA[Members of these groups can enable or disable Links and.]]></item>
+		<item name="wcf.acp.group.option.mod.linkList.canEditLink"><![CDATA[Can edit Links]]></item>
+		<item name="wcf.acp.group.option.mod.linkList.canEditLink.description"><![CDATA[Members of these groups can work on all Links.]]></item>
+		<item name="wcf.acp.group.option.mod.linkList.canDeleteLink"><![CDATA[Can delete Links]]></item>
+		<item name="wcf.acp.group.option.mod.linkList.canDeleteLink.description"><![CDATA[Members of these groups can delete Links.]]></item>
+		<item name="wcf.acp.group.option.mod.linkList.canDeleteLinkCompletely"><![CDATA[Can Links completely delete]]></item>
+		<item name="wcf.acp.group.option.mod.linkList.canDeleteLinkCompletely.description"><![CDATA[Members of these groups can delete Links and completely out of the trash out.]]></item>
+		<item name="wcf.acp.group.option.mod.linkList.canPinLink"><![CDATA[Can mark Links as important]]></item>
+		<item name="wcf.acp.group.option.mod.linkList.canPinLink.description"><![CDATA[Members of these groups can mark Links as important.]]></item>
+		<item name="wcf.acp.group.option.mod.linkList.canCloseLink"><![CDATA[Can close Links]]></item>
+		<item name="wcf.acp.group.option.mod.linkList.canCloseLink.description"><![CDATA[Members of these groups can close Links.]]></item>
+		<item name="wcf.acp.group.option.mod.linkList.canMoveLink"><![CDATA[Can move left]]></item>
+		<item name="wcf.acp.group.option.mod.linkList.canMoveLink.description"><![CDATA[Members of these groups have Links to move to a different category.]]></item>
+		<item name="wcf.acp.group.option.mod.linkList.canEditComment"><![CDATA[Can edit comments]]></item>
+		<item name="wcf.acp.group.option.mod.linkList.canEditComment.description"><![CDATA[Members of these groups can work on all Links.]]></item>
+		<item name="wcf.acp.group.option.mod.linkList.canDeleteComment"><![CDATA[Can delete comments]]></item>
+		<item name="wcf.acp.group.option.mod.linkList.canDeleteComment.description"><![CDATA[Members of these groups can permanently delete comments.]]></item>
+		<!-- /mod -->
+		
+		<!-- admin -->
+		<item name="wcf.acp.group.option.category.admin.linkList"><![CDATA[Links]]></item>
+		<item name="wcf.acp.group.option.category.admin.linkList.description" />
+
+		<item name="wcf.acp.group.option.admin.linkList.canAddCategory"><![CDATA[Can add categories]]></item>
+		<item name="wcf.acp.group.option.admin.linkList.canAddCategory.description"><![CDATA[Members of these groups can add new categories.]]></item>
+		<item name="wcf.acp.group.option.admin.linkList.canEditCategory"><![CDATA[Can edit categories]]></item>
+		<item name="wcf.acp.group.option.admin.linkList.canEditCategory.description"><![CDATA[Members of these groups can edit categories.]]></item>
+		<item name="wcf.acp.group.option.admin.linkList.canDeleteCategory"><![CDATA[Can delete categories]]></item>
+		<item name="wcf.acp.group.option.admin.linkList.canDeleteCategory.description"><![CDATA[Members of these groups can delete categories.]]></item>
+		<!-- /admin -->
+	</category>
+	<!-- /wcf.acp.group -->
+	
+	<!-- wcf.acp.option -->
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.linkList"><![CDATA[Links]]></item>
+		<item name="wcf.acp.option.category.linkList.description"><![CDATA[Manage the settings of the Link collection).]]></item>
+		<item name="wcf.acp.option.category.linkList.general"><![CDATA[General]]></item>
+		<item name="wcf.acp.option.category.linkList.general.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.category.linkList.category"><![CDATA[Categories]]></item>
+		<item name="wcf.acp.option.category.linkList.category.description" />
+		<item name="wcf.acp.option.category.linkList.link"><![CDATA[Links]]></item>
+		<item name="wcf.acp.option.category.linkList.link.description" />
+		<item name="wcf.acp.option.category.linkList.comment"><![CDATA[Comments]]></item>
+		<item name="wcf.acp.option.category.linkList.comment.description" />
+		
+		<item name="wcf.acp.option.module_linkList"><![CDATA[Link collection (Linklist)]]></item>
+		<item name="wcf.acp.option.module_linkList.description"><![CDATA[The facility to collect and manage Links.]]></item>
+		
+		<item name="wcf.acp.option.profile_show_last_linkList_links"><![CDATA[Last Link of a user's profile]]></item>
+		<item name="wcf.acp.option.profile_show_last_linkList_links.description"><![CDATA[If the last five Links are displayed in a user's profile?]]></item>
+		<item name="wcf.acp.option.linkList_general_show_copyright"><![CDATA[Show copyright?]]></item>
+		<item name="wcf.acp.option.linkList_general_show_copyright.description"><![CDATA[if you want to support the developer please tick this option]]></item>		
+		<item name="wcf.acp.option.linkList_category_links_per_page"><![CDATA[Links per page]]></item>
+		<item name="wcf.acp.option.linkList_category_links_per_page.description"><![CDATA[Specify how many Links should be displayed on one page]]></item>
+		<item name="wcf.acp.option.linkList_category_default_sort_field"><![CDATA[sorting]]></item>
+		<item name="wcf.acp.option.linkList_category_default_sort_field.description"><![CDATA[Enter here should be that left-sorted by default]]></item>
+		<item name="wcf.acp.option.linkList_category_default_sort_order"><![CDATA[Sort order]]></item>
+		<item name="wcf.acp.option.linkList_category_default_sort_order.description"><![CDATA[Enter here to be displayed in the order of Links]]></item>
+		<item name="wcf.acp.option.linkList_link_enable_recycle_bin"><![CDATA[Activate trash for links]]></item>
+		<item name="wcf.acp.option.linkList_link_enable_recycle_bin.description"><![CDATA[If these Links are deleted first to land in a virtual trash, which they can be restored at any time.]]></item>
+		<item name="wcf.acp.option.linkList_link_empty_recycle_bin_cycle"><![CDATA[Trash emptied automatically]]></item>
+		<item name="wcf.acp.option.linkList_link_empty_recycle_bin_cycle.description"><![CDATA[Enter here should be deleted after how many days left automatically from Trash. Enter &raquo;0&laquo; a, to disable the automatic deletion completely.]]></item>
+		<item name="wcf.acp.option.linkList_activity_points_per_link"><![CDATA[Activity points per Link]]></item>
+		<item name="wcf.acp.option.linkList_activity_points_per_link.description"><![CDATA[Will give you here, how many activity points will receive a user when creating a new Link.]]></item>
+		<item name="wcf.acp.option.linkList_link_show_sidebar"><![CDATA[Show Sidebar]]></item>
+		<item name="wcf.acp.option.linkList_link_show_sidebar.description"><![CDATA[If the right sidebar with Links to information on the Link overview page is displayed?]]></item>
+		<item name="wcf.acp.option.linkList_link_show_lastVisitors"><![CDATA[Last visitors a Link Show]]></item>
+		<item name="wcf.acp.option.linkList_link_show_lastVisitors.description"><![CDATA[If the last visitors to display a Link in the sidebar of a Link?]]></item>
+		<item name="wcf.acp.option.linkList_link_show_facebook_likeButton"><![CDATA[I like (Facebook)-Button Show]]></item>
+		<item name="wcf.acp.option.linkList_link_show_facebook_likeButton.description"><![CDATA[If the "Like" button on Facebook at each Link is displayed?]]></item>
+		<item name="wcf.acp.option.linkList_enable_comments"><![CDATA[Allow Comments]]></item>
+		<item name="wcf.acp.option.linkList_enable_comments.description"><![CDATA[Should it be possible for users to comment on Links?]]></item>
+		<item name="wcf.acp.option.linkList_commentList_comments_per_page"><![CDATA[Comments per page]]></item>
+		<item name="wcf.acp.option.linkList_commentList_comments_per_page.description"><![CDATA[Enter how many comments are shown on one page.]]></item>
+		<item name="wcf.acp.option.linkList_commentList_show_sidebar"><![CDATA[Sidebar on display this listing]]></item>
+		<item name="wcf.acp.option.linkList_commentList_show_sidebar.description"><![CDATA[If the right sidebar with Links to information are also displayed on the side of this listing?]]></item>
+		<item name="wcf.acp.option.linkList_commentList_show_signature"><![CDATA[Show Signature]]></item>
+		<item name="wcf.acp.option.linkList_commentList_show_signature.description"><![CDATA[If the signature is displayed on comments?]]></item>
+		<item name="wcf.acp.option.linkList_activity_points_per_comment"><![CDATA[Activity points per comment]]></item>
+		<item name="wcf.acp.option.linkList_activity_points_per_comment.description"><![CDATA[Will give you here, how many activity points will receive a user when creating a new comment.]]></item>
+	</category>
+	<!-- /wcf.acp.option -->
+	
+	<category name="wcf.acp.counterUpdate">
+		<item name="wcf.acp.counterUpdate.type.linkListLinkComment"><![CDATA[Comments (Link collection)]]></item>
+		<item name="wcf.acp.counterUpdate.type.linkListCategory"><![CDATA[categories (Link collection)]]></item>
+	</category>
+</language>

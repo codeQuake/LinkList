@@ -1,0 +1,1 @@
+@ALTER TABLE wcf1_linklist_category ADD visits INT(10) NOT NULL DEFAULT 0;
