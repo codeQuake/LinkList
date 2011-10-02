@@ -1,5 +1,3 @@
 TODO:
 en.xml für Linklist Renommee für Links
 Moderation ins WBB ModCP (optional)?
-LinkListCategory.tpl Icons vor Kategorien
-Links als 'class="externalURL" style="background-image:none;"'
