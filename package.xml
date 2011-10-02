@@ -3,7 +3,7 @@
 	<packageinformation>
 		<packagename>Link Sammlung (Linkliste)</packagename>
 		<packagedescription>Sammeln Sie mit Ihrer Community Links so einfach und übersichtlich wie noch nie. Viele Funktionen gewähren Ihnen und Ihrer Community eine zuverlässige Sammlung.</packagedescription>
-		<version>1.2.0 Beta 1</version>
+		<version>1.2.0</version>
 		<date>2011-09-28</date>
 		<plugin>com.woltlab.wcf.data.page</plugin>
 		<standalone>0</standalone>
@@ -91,6 +91,10 @@
 	</instructions>
 	
 	<instructions type="update" fromversion="1.2.0 Alpha 1">
+		<files>files.tar</files>
+	</instructions>
+	
+	<instructions type="update" fromversion="1.2.0 Beta 1">
 		<files>files.tar</files>
 	</instructions>
 </package>
