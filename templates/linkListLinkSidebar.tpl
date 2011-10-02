@@ -105,7 +105,7 @@
 		<div class="pageMenu"> 
 			<ul class="twoRows">
 				<li class="{cycle values='container-1,container-2'}">
-					<a href="index.php?page=LinkListLinkVisit&amp;linkID={@$linkID}{@SID_ARG_2ND}"><img src="{icon}visitsM.png{/icon}" alt="" /> 
+					<a href="index.php?page=LinkListLinkVisit&amp;linkID={@$linkID}{@SID_ARG_2ND}" class="externalURL" style="background-image:none;"><img src="{icon}visitsM.png{/icon}" alt="" /> 
 					<label class="smallFont">{lang}wcf.linkList.link.visit{/lang}</label>
 					<span>{lang}wcf.linkList.link.visit.value{/lang}</span></a>
 				</li>

@@ -139,7 +139,7 @@
 								<div class="buttonBar">
 									<div style="font-size: 4pt"><br /></div>
 									<h3 style="text-align:right; font-size: 14pt">
-										&raquo; <a href="index.php?page=LinkListLinkVisit&amp;linkID={@$linkID}{@SID_ARG_2ND}">{lang}wcf.linkList.link.visit.value{/lang}</a>
+										&raquo; <a href="index.php?page=LinkListLinkVisit&amp;linkID={@$linkID}{@SID_ARG_2ND}" class="externalURL" style="background-image:none;">{lang}wcf.linkList.link.visit.value{/lang}</a>
 									</h3>
 								</div>
 							{/if}

@@ -114,7 +114,7 @@
 									<div class="categoryListInner container-{cycle name='linkListCategoryListCycle'} category{@$categoryListID}">
 										<div class="categoryListTitle linkListCategoryListCols-2">
 											<div class="containerIcon">
-												<img src="{icon}{if $categoryList->icon}{@$categoryList->image}{else}{@$categoryList->getIconName()}{/if}M.png{/icon}" alt=""/>
+												<img src="{icon}{if $categoryList->image}{@$categoryList->image}{else}{@$categoryList->getIconName()}{/if}M.png{/icon}" alt=""/>
 										</div>
 							
 										<div class="containerContent">
@@ -273,7 +273,7 @@
 											<div class="smallButtons">
 												<ul>
 													<li class="extraButton"><a href="#top" title="{lang}wcf.global.scrollUp{/lang}"><img src="{icon}upS.png{/icon}" alt="" /> <span class="hidden">{lang}wcf.global.scrollUp{/lang}</span></a></li>
-													{if $category->getPermission('canVisitLink')}<li><a href="index.php?page=LinkListLinkVisit&amp;linkID={@$link->linkID}{@SID_ARG_2ND}" title="{lang}wcf.linkList.link.visit{/lang}"><img src="{icon}nextS.png{/icon}" alt="" /> <span>{lang}wcf.linkList.link.visit{/lang}</span></a></li>{/if}
+													{if $category->getPermission('canVisitLink')}<li><a href="index.php?page=LinkListLinkVisit&amp;linkID={@$link->linkID}{@SID_ARG_2ND}" title="{lang}wcf.linkList.link.visit{/lang}" class="externalURL" style="background-image:none;"><img src="{icon}nextS.png{/icon}" alt="" /> <span>{lang}wcf.linkList.link.visit{/lang}</span></a></li>{/if}
 													{if $link->isEditable($category)}<li><a href="index.php?form=LinkListLinkEdit&amp;linkID={@$link->linkID}{@SID_ARG_2ND}" title="{lang}wcf.linkList.link.edit{/lang}"><img src="{icon}editS.png{/icon}" alt="" /> <span>{lang}wcf.global.button.edit{/lang}</span></a></li>{/if}
 													{if $additionalSmallButtons.$linkID|isset}{@$additionalSmallButtons.$linkID}{/if}
 												</ul>
