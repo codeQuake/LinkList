@@ -100,7 +100,7 @@
 		<templates>templates.tar</templates>
 	</instructions>
 
-	<instructions type="update" fromversion="1.2.1">
+	<instructions type="update" fromversion="1.2.0">
 		<templates>templates.tar</templates>
 	</instructions>
 </package>
