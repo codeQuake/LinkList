@@ -160,7 +160,7 @@ class LinkListLinkReportForm extends MessageForm {
 		$this->reportID = WCF::getDB()->getInsertID();
 		
 		// update linkList_link table
-		$sql = "UPDATE 	wcf".WCF_N."_linkList_link
+		$sql = "UPDATE 	wcf".WCF_N."_linklist_link
 			SET	isReported = 1
 			WHERE 	linkID = ".$this->linkID;
 		WCF::getDB()->registerShutdownUpdate($sql);

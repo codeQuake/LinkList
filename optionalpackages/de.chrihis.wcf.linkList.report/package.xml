@@ -3,7 +3,7 @@
 	<packageinformation>
 		<packagename>Link Sammlung: Meldefunktion</packagename>
 		<packagedescription>Dieses Plugin integriert in die Link Sammlung (Linkliste) eine Meldefunktion, mit der Links Moderatoren gemeldet werden können.</packagedescription>
-		<version>1.0.2</version>
+		<version>1.0.3</version>
 		<date>2010-11-13</date>
 		<plugin>com.woltlab.wcf.form.message</plugin>
 		<standalone>0</standalone>
@@ -48,6 +48,10 @@
 		<script>acp/update_rep101.php</script>
 	</instructions>
 	<instructions type="update" fromversion="1.0.1">
+		<files>files.tar</files>
+	</instructions>
+	
+	<instructions type="update" fromversion="1.0.2">
 		<files>files.tar</files>
 	</instructions>
 </package>
