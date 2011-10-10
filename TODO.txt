@@ -1,3 +1,5 @@
 TODO:
-en.xml für Linklist Renommee für Links
 Moderation ins WBB ModCP (optional)?
+/wcf/icon/linkListCategoryEditL.png fehlt
+LinkListModerationReportedLinksPage.class.php im UNIX Modus abspeichern
+

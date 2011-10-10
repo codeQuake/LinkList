@@ -48,7 +48,7 @@
 					<p>{#$link->visits}</p>
 				</div>
 			</li>
-			{if $link->lastVisitTime}
+			{if $link->lastVisitTime && LINKLIST_LINK_SHOW_LASTVISITORS}
 				<li class="{cycle values='container-1,container-2'}">
 					<div class="containerIcon">
 					

@@ -2,8 +2,8 @@
 <package name="de.chrihis.wcf.linkList.link.renommee" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/package.xsd">
 	<packageinformation>
 		<packagename>Link Sammlung: Renommeesystem-Integrierung</packagename>
-		<packagedescription>Dieses Plugin integriert das Renommeesystem in Version 1.1 in die Link Sammlung (Linkliste) und erlaubt es, Links zu bewerten.</packagedescription>
-		<version>1.1.0</version>
+		<packagedescription>Dieses Plugin integriert das Renommeesystem in Version 1.2 in die Link Sammlung (Linkliste) und erlaubt es, Links zu bewerten.</packagedescription>
+		<version>1.1.1</version>
 		<date>2010-12-11</date>
 		<plugin>com.woltlab.wcf.page.user.profile</plugin>
 		<standalone>0</standalone>
@@ -38,8 +38,11 @@
 		<languages languagecode="de-informal">de-informal.xml</languages>
 	</instructions>
 	<instructions type="update" fromversion="1.1.0 Beta 1">
+		renommeeobjecttype>renommeeobjecttype.xml</renommeeobjecttype>
+		<languages languagecode="en">en.xml</languages>
+		<files>files.tar</files>
+	</instructions>
+	<instructions type="update" fromversion="1.1.0">
 	<languages languagecode="en">en.xml</languages>
-	<files>files.tar</files>
-	<renommeeobjecttype>renommeeobjecttype.xml</renommeeobjecttype>
 	</instructions>
 </package>

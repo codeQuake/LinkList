@@ -1,4 +1,4 @@
-{if $lastVisitors|count > 0}
+{if $lastVisitors|count > 0 && LINKLIST_LINK_SHOW_LASTVISITORS}
 	<div class="contentBox">
 		<div class="border">
 			<div class="containerHead">
