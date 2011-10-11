@@ -6,7 +6,7 @@
 		<item name="wcf.linkList.index"><![CDATA[Links]]></item>
 		<item name="wcf.linkList.index.description"><![CDATA[Here you will find a collection of several links. You can add links or comment on existing links.]]></item>
 		<item name="wcf.linkList.statistics"><![CDATA[Statistics]]></item>
-		<item name="wcf.linkList.statistics.details"><![CDATA[{if $statistics.categories == 1}1 Category{else}{#$statistics.categories} 	Categories{/if} - {if $statistics.links == 1}1 Link{else} {#$statistics.links} Links{/if} ({#$statistics.linksPerDay} Links per day) - {if $statistics.comments == 1}1 Kommentar{else}{#$statistics.comments} Comments{/if} ({#$statistics.commentsPerDay} Comments per day) - {if $statistics.visits == 1}1 Visit{else}{#$statistics.visits} Visits{/if}]]></item>
+		<item name="wcf.linkList.statistics.details"><![CDATA[{if $statistics.categories == 1}1 Category{else}{#$statistics.categories} 	Categories{/if} - {if $statistics.links == 1}1 Link{else} {#$statistics.links} Links{/if} ({#$statistics.linksPerDay} Links per day) - {if $statistics.comments == 1}1 Comment{else}{#$statistics.comments} Comments{/if} ({#$statistics.commentsPerDay} Comments per day) - {if $statistics.visits == 1}1 Visit{else}{#$statistics.visits} Visits{/if}]]></item>
 		<item name="wcf.linkList.link.search.query"><![CDATA[Search Links]]></item>
 		<item name="wcf.linkList.moderation"><![CDATA[Moderation]]></item>
 		<item name="wcf.linkList.moderation.overview"><![CDATA[Overview]]></item>
