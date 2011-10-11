@@ -1,5 +1,4 @@
 TODO:
 Moderation ins WBB ModCP (optional)?
-/wcf/icon/linkListCategoryEditL.png fehlt
 LinkListModerationReportedLinksPage.class.php im UNIX Modus abspeichern
 

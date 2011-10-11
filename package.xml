@@ -104,11 +104,13 @@
 
 	<instructions type="update" fromversion="1.2.0">
 		<templates>templates.tar</templates>
+		<files>files.tar</files>
 		<languages languagecode="en">en.xml</languages>
 	</instructions>
 
 	<instructions type="update" fromversion="1.2.1">
 		<templates>templates.tar</templates>
+		<files>files.tar</files>
 		<languages languagecode="en">en.xml</languages>
 	</instructions>
 </package>
