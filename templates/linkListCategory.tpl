@@ -253,7 +253,7 @@
 												<h3 id="linkListLinkSubject{@$link->linkID}" class="subject">
 													<a href="index.php?page=LinkListLink&amp;linkID={@$link->linkID}{@SID_ARG_2ND}">{$link->subject}</a>
 												</h3>
-												<p class="light smallFont">{lang}wcf.linkList.link.by{/lang} {if $link->userID}<a href="index.php?page=User&amp;userID={@$link->getAuthor()->userID}{@SID_ARG_2ND}">{$link->getAuthor()->username}</a>{else}{$link->username}{/if} ({@$link->time|time})</p>
+												<p class="light smallFont">{lang}wcf.linkList.link.by{/lang} {if $link->userID != 0}<a href="index.php?page=User&amp;userID={@$link->getAuthor()->userID}{@SID_ARG_2ND}">{$link->getAuthor()->username}</a>{else}{$link->username}{/if} ({@$link->time|time})</p>
 											</div>
 										</div>
 								
