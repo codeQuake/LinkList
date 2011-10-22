@@ -25,7 +25,7 @@
 								<li>
 									<a href="index.php?page=LinkListLinkCommentList&amp;linkID={@$comment->linkID}&amp;commentID={@$comment->commentID}{@SID_ARG_2ND}#comment{@$comment->commentID}">
 										<img src="{icon}messageS.png{/icon}" alt="" />
-										<span>{$comment->getExcerpt()|truncate:150:"..."}</span>
+										<span>{@$comment->getExcerpt()|truncate:150:"..."}</span>
 									</a> 
 									<span class="light">({@$comment->time|shorttime})</span>
 								</li>
@@ -69,7 +69,7 @@
 											<img src="{icon}userS.png{/icon}" alt="" title="{lang}wcf.linkList.newestComments.ownComment{/lang}" />
 										{/if}
 									</span>
-										<img src="{icon}messageS.png{/icon}" alt="" /> <a href="index.php?page=LinkListLinkCommentList&amp;linkID={@$comment->linkID}&amp;commentID={@$comment->commentID}{@SID_ARG_2ND}#comment{@$comment->commentID}"><span>{$comment->getExcerpt()|truncate:150:"..."}</span></a>										
+										<img src="{icon}messageS.png{/icon}" alt="" /> <a href="index.php?page=LinkListLinkCommentList&amp;linkID={@$comment->linkID}&amp;commentID={@$comment->commentID}{@SID_ARG_2ND}#comment{@$comment->commentID}"><span>{@$comment->getExcerpt()|truncate:150:"..."}</span></a>										
 								</td>										
 								<td class="columnTopXCommentsTime" style="width:31%;">						
 									<div class="containerIconSmall">
@@ -119,7 +119,7 @@
                                 <div class="containerContent">
                                 	<p class="commentTitle">
                                     	<a href="index.php?page=LinkListLinkCommentList&amp;linkID={@$comment->linkID}&amp;commentID={@$comment->commentID}{@SID_ARG_2ND}#comment{@$comment->commentID}">
-										<span>{$comment->getExcerpt()|truncate:50:"..."}</span>
+										<span>{@$comment->getExcerpt()|truncate:50:"..."}</span>
 										</a> 
                                     </p>
                                     <p class="light smallFont">

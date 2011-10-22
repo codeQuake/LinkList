@@ -3,7 +3,7 @@
 	<packageinformation>
 		<packagename>Link Sammlung: Neuste Links und Kommentare anzeigen</packagename>
 		<packagedescription>Dieses Plugin zeigt die neusten Links und Kommentare der Link Sammlung (Linkliste) auf der Links-Seite an.</packagedescription>
-		<version>1.1.1</version>
+		<version>1.1.2</version>
 		<date>2011-03-29</date>
 		<plugin>com.woltlab.wcf.data.page</plugin>
 		<standalone>0</standalone>
@@ -82,6 +82,10 @@
 		<languages languagecode="de-informal">de-informal.xml</languages>
 	</instructions>
 	<instructions type="update" fromversion="1.1.0">
+		<templates>templates.tar</templates>
+	</instructions>
+
+	<instructions type="update" fromversion="1.1.1">
 		<templates>templates.tar</templates>
 	</instructions>
 </package>
