@@ -17,7 +17,7 @@
 						<li>
 							<ul class="breadCrumbs">
 								<li>
-									<a href="index.php?page=LinkListLinkCategory&amp;categoryID={@$link->categoryID}{@SID_ARG_2ND}">
+									<a href="index.php?page=LinkListCategory&amp;categoryID={@$link->categoryID}{@SID_ARG_2ND}">
 										<img src="{icon}{@$link->category->getIconName()}S.png{/icon}" alt="" />
 										<span>{$link->category->title}</span>
 									</a> &raquo;
