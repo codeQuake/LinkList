@@ -27,7 +27,7 @@ class LinkListLinkRenommeeObject extends LinkListLink implements RenommeeObject 
                                                 FROM            wcf".WCF_N."_user_renommee
 						WHERE           objectID = linkList_link.linkID
 						AND             objectType = 'linkListLink') AS evaluatorIDs
-				FROM 	wcf".WCF_N."_linkList_link linkList_link
+				FROM 	wcf".WCF_N."_linklist_link linkList_link
 				WHERE 	linkList_link.linkID = ".$linkID;
 			$row = WCF::getDB()->getFirstRow($sql);
 		}		

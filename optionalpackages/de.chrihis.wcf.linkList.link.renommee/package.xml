@@ -3,7 +3,7 @@
 	<packageinformation>
 		<packagename>Link Sammlung: Renommeesystem-Integrierung</packagename>
 		<packagedescription>Dieses Plugin integriert das Renommeesystem in Version 1.2 in die Link Sammlung (Linkliste) und erlaubt es, Links zu bewerten.</packagedescription>
-		<version>1.1.1</version>
+		<version>1.1.1 pl 1</version>
 		<date>2010-12-11</date>
 		<plugin>com.woltlab.wcf.page.user.profile</plugin>
 		<standalone>0</standalone>
@@ -44,5 +44,9 @@
 	</instructions>
 	<instructions type="update" fromversion="1.1.0">
 	<languages languagecode="en">en.xml</languages>
+	<files>files.tar</files>	
+	</instructions>
+	<instructions type="update" fromversion="1.1.1">
+	<files>files.tar</files>
 	</instructions>
 </package>
