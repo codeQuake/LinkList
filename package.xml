@@ -113,4 +113,11 @@
 		<files>files.tar</files>
 		<languages languagecode="en">en.xml</languages>
 	</instructions>
+
+  <instructions type="update" fromversion="1.2.2">
+    <templates>templates.tar</templates>
+    <languages languagecode="en">en.xml</languages>
+    <languages languagecode="de">de.xml</languages>
+    <languages languagecode="de-informal">de-informal.xml</languages>
+  </instructions>
 </package>

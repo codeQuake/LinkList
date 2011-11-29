@@ -187,9 +187,9 @@
 	
 	<!-- wcf.tagging -->
 	<category name="wcf.tagging">
-		<item name="wcf.tagging.taggable.all.de.chrihis.wcf.linkList.link"><![CDATA[Alle Links]]></item>
-		<item name="wcf.tagging.taggable.de.chrihis.wcf.linkList.link"><![CDATA[Links]]></item>
-	</category>
+		<item name="wcf.tagging.taggable.all.de.chrihis.linkList.link"><![CDATA[Alle Links]]></item>
+		<item name="wcf.tagging.taggable.de.chrihis.linkList.link"><![CDATA[Links]]></item>
+  </category>
 	<!-- /wcf.tagging -->
 
 	<!-- wcf.help.item -->
