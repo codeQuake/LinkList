@@ -50,7 +50,7 @@ CREATE TABLE wcf1_linklist_link (
 	categoryID INT(10) NOT NULL DEFAULT 0,
 	subject VARCHAR(255) NOT NULL DEFAULT '',
 	message MEDIUMTEXT NOT NULL,
-	shortDescription TEXT(1000) NOT NULL DEFAULT '',
+	shortDescription TEXT(1000) NOT NULL,
 	userID INT(10) NOT NULL DEFAULT 0,
 	username VARCHAR(255) NOT NULL DEFAULT '',
 	url VARCHAR(255) NOT NULL DEFAULT '',
