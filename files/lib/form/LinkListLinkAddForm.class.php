@@ -19,6 +19,7 @@ require_once(WCF_DIR.'lib/page/util/menu/PageMenu.class.php');
 class LinkListLinkAddForm extends MessageForm {
 	// system
 	public $templateName = 'linkListLinkAdd';
+        public $neededPermissions = 'user.linkList.canAddLink';
 	public $showPoll = false;
 	public $showSignatureSetting = false;
 	public $preview, $send;
