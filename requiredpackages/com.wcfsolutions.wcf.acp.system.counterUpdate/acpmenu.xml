@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE data SYSTEM "http://www.woltlab.com/DTDs/acpMenu.dtd">
+<data>	
+	<import>
+		<acpmenuitem name="wcf.acp.menu.link.maintenance.counterUpdate">
+			<parent>wcf.acp.menu.link.maintenance</parent>
+			<link>index.php?form=CounterUpdate</link>
+			<icon>icon/counterUpdateM.png</icon>
+			<permissions>admin.maintenance.canUseCounterUpdate</permissions>
+		</acpmenuitem>
+	</import>
+</data>

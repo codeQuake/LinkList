@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de-informal">
+	<category name="wcf.acp.counterUpdate">
+		<item name="wcf.acp.counterUpdate"><![CDATA[Anzeigen-Aktualisierung]]></item>
+		<item name="wcf.acp.counterUpdate.error.noCounterUpdateTypes"><![CDATA[Derzeit sind keine Aktionen für die Anzeigen-Aktualisierung vorhanden.]]></item>
+		<item name="wcf.acp.counterUpdate.limit"><![CDATA[Intervall]]></item>
+		<item name="wcf.acp.counterUpdate.limit.description"><![CDATA[Maximale Anzahl an Aktualisierungen pro Seitenaufruf]]></item>
+		<item name="wcf.acp.counterUpdate.type"><![CDATA[Aktion]]></item>
+		<item name="wcf.acp.counterUpdate.type.description"><![CDATA[Bitte wähle hier die Aktion, die ausgeführt werden soll.]]></item>
+	</category>
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.admin.maintenance.canUseCounterUpdate"><![CDATA[Kann Anzeigen-Aktualisierung verwenden]]></item>
+		<item name="wcf.acp.group.option.admin.maintenance.canUseCounterUpdate.description"><![CDATA[Mitglieder dieser Benutzergruppe können die Anzeigen-Aktualisierung verwenden.]]></item>
+	</category>
+	<category name="wcf.acp.menu">
+		<item name="wcf.acp.menu.link.maintenance.counterUpdate"><![CDATA[Anzeigen-Aktualisierung]]></item>
+	</category>
+</language>

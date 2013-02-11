@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="en">
+	<category name="wcf.acp.counterUpdate">
+		<item name="wcf.acp.counterUpdate"><![CDATA[Update counters]]></item>
+		<item name="wcf.acp.counterUpdate.error.noCounterUpdateTypes"><![CDATA[There are no update types available]]></item>
+		<item name="wcf.acp.counterUpdate.limit"><![CDATA[Interval]]></item>
+		<item name="wcf.acp.counterUpdate.limit.description"><![CDATA[Number of refreshes to process per cycle]]></item>
+		<item name="wcf.acp.counterUpdate.type"><![CDATA[Counter]]></item>
+		<item name="wcf.acp.counterUpdate.type.description"><![CDATA[Please select the counter to be refreshed!]]></item>
+	</category>
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.admin.maintenance.canUseCounterUpdate"><![CDATA[Can use counter update]]></item>
+		<item name="wcf.acp.group.option.admin.maintenance.canUseCounterUpdate.description"><![CDATA[Members of this group can use counter update.]]></item>
+	</category>
+	<category name="wcf.acp.menu">
+		<item name="wcf.acp.menu.link.maintenance.counterUpdate"><![CDATA[Update counters]]></item>
+	</category>
+</language>

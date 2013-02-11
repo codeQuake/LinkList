@@ -349,4 +349,7 @@ To add a new comment can simply click on one of two buttons &raquo;Add comment&l
 		<item name="wcf.acp.counterUpdate.type.linkListLinkComment"><![CDATA[Comments (Link collection)]]></item>
 		<item name="wcf.acp.counterUpdate.type.linkListCategory"><![CDATA[categories (Link collection)]]></item>
 	</category>
+	<category name="wcf.attachment">
+		<item name="wcf.attachment.containerType.linkListLink"><![CDATA[Link]]></item>
+	</category>
 </language>
