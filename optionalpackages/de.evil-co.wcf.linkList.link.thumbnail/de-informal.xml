@@ -4,11 +4,11 @@
 	<category name="wcf.linkList">
 		<item name="wcf.linkList.link.thumbnail"><![CDATA[Vorschaubild]]></item>
 		<item name="wcf.linkList.link.thumbnailShow"><![CDATA[Vorschaubild anzeigen]]></item>
-		<item name="wcf.linkList.link.thumbnail.type1"><![CDATA[fadeout.de]]></item>
+		<item name="wcf.linkList.link.thumbnail.type1"><![CDATA[Thumbsniper]]></item>
 		<item name="wcf.linkList.link.thumbnail.type2"><![CDATA[websnapr.com]]></item>
 		<item name="wcf.linkList.link.thumbnail.view.type1"><![CDATA[Ansicht 1]]></item>
 		<item name="wcf.linkList.link.thumbnail.view.type2"><![CDATA[Ansicht 2]]></item>
-		<item name="wcf.linkList.link.thumbnail.fadeout.coypright"><![CDATA[Vorschaubilder erstellt durch <a href="http://www.fadeout.de">fadeout.de</a>]]></item>
+		<item name="wcf.linkList.link.thumbnail.fadeout.coypright"><![CDATA[<a href="http://thumbsniper.com/" target="_blank"><img title="ThumbNails powered by ThumbSniper" alt="ThumbSniper" src="http://thumbsniper.com/banner" /></a>]]></item>
 	</category>
 	<!-- /wcf.linkList -->
 	
@@ -21,7 +21,7 @@
 		<item name="wcf.acp.option.linkList_link_thumbnail_type"><![CDATA[Vorschaubild-Dienst]]></item>
 		<item name="wcf.acp.option.linkList_link_thumbnail_type.description"><![CDATA[<p>W&auml;hle hier einen Dienst aus, von dem die Vorschaubilder bezogen werden sollen.</p>
 <ul>
-	<li><strong><a href="http://fadeout.de">fadeout.de</a></strong>: Bei diesem Dienst aktiviert sich automatisch ein Copyright auf der Startseite der Linkliste (schreibt der Anbieter vor).</li>
+	<li><strong><a href="http://thumbsniper.com">thumbsniper.com</a></strong>: Bei diesem Dienst aktiviert sich automatisch ein Copyright auf der Startseite der Linkliste (schreibt der Anbieter vor).</li>
 	<li><strong><a href="http://www.websnapr.com/de/">websnapr.com</a></strong>: Bei diesem Dienst wird im Vorschaubild ein Copyright gezeigt (Beachte das der websnapr-Dienst einen Key benötigt und teilweise invaliden HTML-Code in Deine Seite einbindet).</li>
 ]]></item>
 		<item name="wcf.acp.option.linkList_link_thumbnail_view"><![CDATA[Ansicht der Vorschaubilder]]></item>

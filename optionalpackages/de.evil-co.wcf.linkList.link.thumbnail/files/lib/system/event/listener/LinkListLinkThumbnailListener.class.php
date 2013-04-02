@@ -22,18 +22,18 @@ class LinkListLinkThumbnailListener implements EventListener {
 		
 		if ($className == 'LinkListLinkPage') {
 			if (LINKLIST_LINK_THUMBNAIL_TYPE == 1) {
-				// fadeout
+				// thumbsnuper
 				if (LINKLIST_LINK_THUMBNAIL_VIEW == 1) {
 					WCF::getTPL()->append(array(
-						'additionalMessageBodyContents' => '<img class="linkListLinkContentThumbnail" src="http://fadeout.de/thumbshot-pro/?url='.$eventObj->link->url.'&scale=4" alt="" title="'.WCF::getLanguage()->get('wcf.linkList.link.thumbnailShow').'" />',
+						'additionalMessageBodyContents' => '<img class="linkListLinkContentThumbnail" src="http://hitman.thumbsniper.com/fire.php?size=3&effect=2&url=" alt="" title="'.WCF::getLanguage()->get('wcf.linkList.link.thumbnailShow').'" />',
 						'specialStyles' => '<style type="text/css">.linkListLinkContentThumbnail { float: right; padding: 5px; } .linkListLinkContentThumbnail:after { clear: right; }</style>'
 					));
 				}
 				else {
 					WCF::getTPL()->assign(array(								
-						'url' => 'http://fadeout.de/thumbshot-pro/?url='.$eventObj->link->url.'&scale=3',
+						'url' => 'http://hitman.thumbsniper.com/fire.php?size=3&effect=2&url='.$eventObj->link->url.'&scale=3',
 						'subject' => $eventObj->link->subject,
-						'service' => 'fadeout',
+						'service' => 'thumbsniper',
 						'linkID' => $eventObj->link->linkID
 					));
 					WCF::getTPL()->append('additionalLinkBoxes', WCF::getTPL()->fetch('linkListLinkThumbnail'));
