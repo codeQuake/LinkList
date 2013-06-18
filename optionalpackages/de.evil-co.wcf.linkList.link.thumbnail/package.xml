@@ -7,7 +7,7 @@
 		<packagedescription>This plugin adds thumbnails to the linklist.</packagedescription>
 		<packagedescription languagecode="de">Dieses Plugin zeigt ein Vorschaubild eines Links an. Dabei kann zwischen mehreren Diensten ausgewählt werden.</packagedescription>
 		<packagedescription languagecode="de-informal">Dieses Plugin zeigt ein Vorschaubild eines Links an. Dabei kann zwischen mehreren Diensten ausgewählt werden.</packagedescription>
-		<version>1.1.0</version>
+		<version>1.1.1</version>
 		<date>2011-07-07</date>
 		<plugin>com.woltlab.wcf.data.message</plugin>
 		<standalone>0</standalone>
@@ -15,8 +15,8 @@
 	</packageinformation>
   
 	<authorinformation>
-		<author>Evil-Co.de</author>
-		<authorurl><![CDATA[http://www.evil-co.de]]></authorurl>
+		<author>Evil-Co.de, changed by Jens Krumsieck (codeQuake)</author>
+		<authorurl><![CDATA[http://codequake.de]]></authorurl>
 	</authorinformation>
   
 	<requiredpackages>
@@ -43,4 +43,18 @@
 		<languages languagecode="de-informal">de-informal.xml</languages>
 		<languages languagecode="en">en.xml</languages>
 	</instructions>
+
+  <instructions type="update" fromversion="1.1.0">
+    <!-- files -->
+    <files>files.tar</files>
+    <templates>templates.tar</templates>
+
+    <!-- config -->
+    <options>options.xml</options>
+
+    <!-- languages -->
+    <languages languagecode="de">de.xml</languages>
+    <languages languagecode="de-informal">de-informal.xml</languages>
+    <languages languagecode="en">en.xml</languages>
+  </instructions>
 </package>
