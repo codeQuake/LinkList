@@ -48,7 +48,7 @@ class LinkListDataImportForm extends ACPForm {
 		}
 		// open xml
 		$dataXML = new XML();
-		$dataXML->loadXML($xml, $tar->extractToString($xml));
+		$dataXML->loadString($tar->extractToString($i));
 		$xmlContent = $dataXML->getElementTree('linkListData-Export');
 		$data = array();
 		$i = 0;
