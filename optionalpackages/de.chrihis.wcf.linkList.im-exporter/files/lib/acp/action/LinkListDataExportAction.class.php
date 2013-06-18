@@ -197,7 +197,7 @@ class LinkListDataExportAction extends AbstractAction {
 		
 		$this->generateXML();
 		$path = $this->getPath();
-		$this->filename = WCF_DIR.'lib/data/linkList/tmp/linkListData-Export.'.StringUtil::getRandomID().'.tar';
+		$this->filename = WCF_DIR.'lib/data/linkList/tmp/linkListData-Export.'.StringUtil::getRandomID().'.gz';
 		// generate gZipped export file 
 		require_once(WCF_DIR.'lib/system/io/TarWriter.class.php');
 		$tar = new TarWriter($this->filename, true);
@@ -220,7 +220,7 @@ class LinkListDataExportAction extends AbstractAction {
 		$this->executed();
 		// headers for downloading file
 		header('Content-Type: application/x-gzip; charset='.CHARSET);
-		header('Content-Disposition: attachment; filename="LinkListData-Export.tar"');
+		header('Content-Disposition: attachment; filename="LinkListData-Export.tar.gz"');
 		readfile($this->filename);
 		// delete temp file
 		@unlink($this->filename);

@@ -3,7 +3,7 @@
 	<packageinformation>
 		<packagename>Link Sammlung: Im- und Exporter</packagename>
 		<packagedescription>Sichern Sie Ihre Links und laden Sie sie ggf. spielend einfach wieder hoch - beide Aktionen sind mit weniger als 10 Klicks gemacht.</packagedescription>
-		<version>1.0.1</version>
+		<version>1.0.2 pl 1</version>
 		<date>2010-12-10</date>
 		<plugin>com.woltlab.wcf.data.page</plugin>
 		<standalone>0</standalone>
@@ -44,4 +44,10 @@
 		<languages languagecode="en">en.xml</languages>
 		<files>files.tar</files>
 	</instructions>
+  <instructions type="update" fromversion="1.0.1">
+    <files>files.tar</files>
+  </instructions>
+  <instructions type="update" fromversion="1.0.2">
+    <files>files.tar</files>
+  </instructions>
 </package>
